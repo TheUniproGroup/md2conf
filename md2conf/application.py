@@ -49,6 +49,10 @@ class Application:
         # Step 1: build index of all page metadata
         for root, directories, files in os.walk(dir):
             for file_name in files:
+                # ignore snippets
+                if file_name.startswith("_"):
+                    continue
+                
                 # check the file extension
                 _, file_extension = os.path.splitext(file_name)
                 if file_extension.lower() != ".md":
