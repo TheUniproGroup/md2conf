@@ -1,3 +1,24 @@
 [build-system]
 requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "md2conf"  # Use the actual name of your forked package
+version = "0.1.0"  # Use the current version of your forked package
+description = ""  # Optional: add a description
+authors = ["Your Name <you@example.com>"]  # Update with your details
+license = ""  # Specify the license if known or applicable
+
+[tool.poetry.dependencies]
+python = "^3.8"
+lxml = "*"
+types-lxml = "*"
+markdown = "*"
+markdown-include = "*"
+types-markdown = "*"
+pymdown-extensions = "*"
+requests = "*"
+types-requests = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
