@@ -1,6 +1,7 @@
 lxml
 types-lxml
 markdown
+markdown-include
 types-markdown
 pymdown-extensions
 requests

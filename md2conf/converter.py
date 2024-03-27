@@ -48,10 +48,16 @@ def markdown_to_html(content: str) -> str:
             "admonition",
             "markdown.extensions.tables",
             "markdown.extensions.fenced_code",
+            "markdown_include.include",
             "pymdownx.magiclink",
             "pymdownx.tilde",
             "sane_lists",
         ],
+        extension_configs={
+            'markdown_include.include': {
+                'base_path': 'docs',
+            },
+        },
     )
 
 
